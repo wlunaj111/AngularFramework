@@ -1,0 +1,14 @@
+<!-- Si cumple la condicion muestro el pais de lo contrario le pido que que espere-->
+<ng-template #loading>
+  <div class="alert alert-info">
+    Epsere por favor
+  </div>
+</ng-template>
+
+<div *ngIf="country; else loading">
+  <div class="row">
+    <div class="col-12">
+      <h2>Pais: <strong>{{country.name.common}}</strong></h2>
+    </div>
+  </div>
+</div>
